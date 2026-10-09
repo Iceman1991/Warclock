@@ -1,0 +1,21 @@
+Warclock – third-party software and licenses
+============================================
+
+Warclock is an unofficial fan project. It is not affiliated with or endorsed by Eagle Dynamics
+(DCS World). All trademarks belong to their owners. DCS World and its maps/modules are not included.
+
+Warclock itself is licensed under the GNU GPL 3.0 (LICENSE.txt).
+
+Bundled
+  .NET 8 Runtime (inside DcsCampaign.exe) ... MIT ... https://github.com/dotnet/runtime
+
+Recommended, not included: Splash Damage script by Stevey666
+  Download it yourself from https://www.digitalcombatsimulator.com/en/files/3344761/
+  Warclock embeds an unchanged copy into generated missions if you place Splash_Damage_*.lua
+  into %LOCALAPPDATA%\DCS-Kampagne\scripts (setup task "Splash Damage"). It remains the work
+  of its author; credit and support via the DCS forum thread.
+
+Optional (setup task "DCS-ATC")
+  DCS-ATC is a separate project (GPL 3.0, https://github.com/Iceman1991/DCS-ATC-Release).
+  It is not part of this setup; Warclock downloads its latest release on first start
+  only if the option was ticked. Its own notices ship with it.

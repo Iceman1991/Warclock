@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>DcsCampaign</AssemblyName>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Product>Warclock</Product>
+    <AssemblyTitle>Warclock</AssemblyTitle>
+    <Version>0.9.0</Version>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\web\**" Link="web\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\mod\**" Link="mod\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <EmbeddedResource Include="weapons.txt" LogicalName="weapons.txt" />
+  </ItemGroup>
+
+</Project>
